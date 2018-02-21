@@ -33,28 +33,28 @@ var circleBern = L.circle([46.944637, 7.473450], {
                   radius: 5000
               }).addTo(map);
 
-
-var grayscale = L.tileLayer(mapboxUrl, {id: 'map', attribution: mapboxAttribution}),
-    streets   = L.tileLayer(mapboxUrl, {id: 'map', attribution: mapboxAttribution});
-
-var map = L.map('map', {
-    center: [39.73, -104.99],
-    zoom: 10,
-    layers: [grayscale, cities]
-});
-
-var baseMaps = {
-    "Grayscale": grayscale,
-    "Streets": streets
-};
-
-var overlayMaps = {
-    "Cities": cities
-};
-
-L.control.layers(baseMaps, overlayMaps).addTo(map);
-
-var baseMaps = {
-    "<span style='color: gray'>Grayscale</span>": grayscale,
-    "Streets": streets
-};
+//
+// var grayscale = L.tileLayer(mapboxUrl, {id: 'map', attribution: mapboxAttribution}),
+//     streets   = L.tileLayer(mapboxUrl, {id: 'map', attribution: mapboxAttribution});
+//
+// var map = L.map('map', {
+//     center: [39.73, -104.99],
+//     zoom: 10,
+//     layers: [grayscale, cities]
+// });
+//
+// var baseMaps = {
+//     "Grayscale": grayscale,
+//     "Streets": streets
+// };
+//
+// var overlayMaps = {
+//     "Cities": cities
+// };
+//
+// L.control.layers(baseMaps, overlayMaps).addTo(map);
+//
+// var baseMaps = {
+//     "<span style='color: gray'>Grayscale</span>": grayscale,
+//     "Streets": streets
+// };
